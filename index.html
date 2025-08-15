@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Sumit De</div>
+            <ul class="nav-links">
+                <li><a href="https://www.linkedin.com/in/sumit210/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/sumitisthename" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Sumit De</h1>
+            <p>AI/ML Developer with 4+ years of experience building and deploying scalable, production-grade machine learning solutions.</p>
+        </section>
+
+        <section class="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-carousel">
+                <button class="scroll-button prev" data-target="featured-projects">&lt;</button>
+                <div class="project-grid" id="featured-projects">
+                    <!-- Projects will be dynamically inserted here -->
+                </div>
+                <button class="scroll-button next" data-target="featured-projects">&gt;</button>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Other Projects</h2>
+            <div class="project-carousel">
+                <button class="scroll-button prev" data-target="other-projects">&lt;</button>
+                <div class="project-grid" id="other-projects">
+                    <!-- Projects will be dynamically inserted here -->
+                </div>
+                <button class="scroll-button next" data-target="other-projects">&gt;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sumit De</p>
+        <p>+1 214-607-7911 | sumit.d.1996@gmail.com | Dallas, TX</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <a href="#" id="modal-link" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
